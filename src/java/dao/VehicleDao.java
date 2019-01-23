@@ -22,16 +22,15 @@ public class VehicleDao {
     
      //create a new product
     public static void insertProduct(Connection connection, Vehicle vehicle) {
-        String sql = "INSERT INTO vehicles(reg_no,chasis_no,model_no,department,contact_person,fuel_type,odometer_reading,extension) VALUES (?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO vehicles(reg_no,chasis_no,model_no,department,engine_no,fuel_type,odometer_reading) VALUES (?,?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, vehicle.getRegNo());
             statement.setString(2, vehicle.getChasisNo());
             statement.setString(3, vehicle.getModelNo());
             statement.setString(4, vehicle.getDepartment());
-            statement.setString(5, vehicle.getContactPerson());
+            statement.setInt(5, vehicle.getEngineNo());
             statement.setString(6, vehicle.getFuelType());
             statement.setString(7, vehicle.getOdometerReading());
-            statement.setString(8, vehicle.getExtension());
 
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -66,14 +65,13 @@ public class VehicleDao {
        String chasisNo=resultSet.getString("chasis_no");
        String modelNo=resultSet.getString("model_no");
        String department=resultSet.getString("department");
-       String contact_person=resultSet.getString("contact_person");
+       int engine_no=resultSet.getInt("engine_no");
        String fuel_type=resultSet.getString("fuel_type");
        String odometerReading=resultSet.getString("odometer_reading");
-       String extension=resultSet.getString("extension");
        
           
-            Vehicle vehicle = new Vehicle(regNo,chasisNo,modelNo,department,contact_person,fuel_type,odometerReading,extension);
-            vehicle.setId(resultSet.getInt("id"));
+       Vehicle vehicle=new Vehicle(regNo, engine_no, chasisNo, modelNo, department, fuel_type, odometerReading);
+       vehicle.setId(resultSet.getInt("id"));
 
             vehicles.add(vehicle);
         }

@@ -79,13 +79,12 @@ public class AddVehicleServlet extends HttpServlet {
         String chasisNo = request.getParameter("chasis_no");
         String modelNo = request.getParameter("model_no");
         String department = request.getParameter("department");
-        String contact_person = request.getParameter("contact_person");
+        int engineNo = Integer.parseInt(request.getParameter("engine_no"));
         String fuel_type = request.getParameter("fuel_type");
         String odometerReading = request.getParameter("odometer_reading");
-        String extension = request.getParameter("extension");
 
-        Vehicle vehicle = new Vehicle(regNo, chasisNo, modelNo, department, contact_person, fuel_type, odometerReading, extension);
 
+        Vehicle vehicle=new Vehicle(regNo, engineNo, chasisNo, modelNo, department, fuel_type, odometerReading);
         Connection connection = DBConnection.getConnection();
         VehicleDao.insertProduct(connection, vehicle);
 

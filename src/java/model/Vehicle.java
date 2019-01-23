@@ -25,20 +25,26 @@ public class Vehicle implements Serializable {
        String chasisNo;
        String modelNo;
        String department;
-       String contactPerson;
-       String fuelType;
-       String odometerReading;
-       String extension;
+       String fuelType; //double and fuel
+       String odometerReading; //int
+       //add engine no
+       int engineNo;
 
-    public Vehicle(String regNo, String chasisNo, String modelNo, String department, String contactPerson, String fuelType, String odometerReading, String extension) {
+    public int getEngineNo() {
+        return engineNo;
+    }
+
+    public void setEngineNo(int engineNo) {
+        this.engineNo = engineNo;
+    }
+    public Vehicle(String regNo, int engineNo,String chasisNo, String modelNo, String department, String fuelType, String odometerReading) {
         this.regNo = regNo;
         this.chasisNo = chasisNo;
         this.modelNo = modelNo;
         this.department = department;
-        this.contactPerson = contactPerson;
         this.fuelType = fuelType;
         this.odometerReading = odometerReading;
-        this.extension = extension;
+        this.engineNo=engineNo;
     }
 
     public String getRegNo() {
@@ -57,9 +63,7 @@ public class Vehicle implements Serializable {
         return department;
     }
 
-    public String getContactPerson() {
-        return contactPerson;
-    }
+    
 
     public String getFuelType() {
         return fuelType;
@@ -69,9 +73,7 @@ public class Vehicle implements Serializable {
         return odometerReading;
     }
 
-    public String getExtension() {
-        return extension;
-    }
+  
 
     public void setRegNo(String regNo) {
         this.regNo = regNo;
@@ -89,10 +91,7 @@ public class Vehicle implements Serializable {
         this.department = department;
     }
 
-    public void setContact_person(String contact_person) {
-        this.contactPerson = contact_person;
-    }
-
+  
     public void setFuel_type(String fuel_type) {
         this.fuelType = fuel_type;
     }
@@ -101,14 +100,13 @@ public class Vehicle implements Serializable {
         this.odometerReading = odometerReading;
     }
 
-    public void setExtension(String extension) {
-        this.extension = extension;
-    }
-
     @Override
     public String toString() {
-        return "Vehicle{" + "regNo=" + regNo + ", chasisNo=" + chasisNo + ", modelNo=" + modelNo + ", department=" + department + ", contact_person=" + contactPerson + ", fuel_type=" + fuelType + ", odometerReading=" + odometerReading + ", extension=" + extension + '}';
+        return "Vehicle{" + "id=" + id + ", regNo=" + regNo + ", chasisNo=" + chasisNo + ", modelNo=" + modelNo + ", department=" + department + ", fuelType=" + fuelType + ", odometerReading=" + odometerReading + ", engineNo=" + engineNo + '}';
     }
+
+   
+
        
        
 }

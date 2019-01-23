@@ -55,10 +55,12 @@ public class UsersDao {
         while (resultSet.next()) {
             int id = resultSet.getInt("id");
             String email = resultSet.getString("email");
+            String name=resultSet.getString("name");
             String password = resultSet.getString("password");
             int user_type = resultSet.getInt("user_type");
 
-            User user = new User(id, email, user_type, password);
+
+            User user = new User(id,name, email, user_type, password);
             mechanics.add(user);
         }
     }
