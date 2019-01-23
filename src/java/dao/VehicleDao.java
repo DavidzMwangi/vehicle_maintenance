@@ -30,7 +30,7 @@ public class VehicleDao {
             statement.setString(4, vehicle.getDepartment());
             statement.setInt(5, vehicle.getEngineNo());
             statement.setString(6, vehicle.getFuelType());
-            statement.setString(7, vehicle.getOdometerReading());
+            statement.setInt(7, vehicle.getOdometerReading());
 
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -67,7 +67,7 @@ public class VehicleDao {
        String department=resultSet.getString("department");
        int engine_no=resultSet.getInt("engine_no");
        String fuel_type=resultSet.getString("fuel_type");
-       String odometerReading=resultSet.getString("odometer_reading");
+       int odometerReading=resultSet.getInt("odometer_reading");
        
           
        Vehicle vehicle=new Vehicle(regNo, engine_no, chasisNo, modelNo, department, fuel_type, odometerReading);

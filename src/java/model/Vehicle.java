@@ -26,8 +26,7 @@ public class Vehicle implements Serializable {
        String modelNo;
        String department;
        String fuelType; //double and fuel
-       String odometerReading; //int
-       //add engine no
+       int odometerReading; //int
        int engineNo;
 
     public int getEngineNo() {
@@ -37,7 +36,7 @@ public class Vehicle implements Serializable {
     public void setEngineNo(int engineNo) {
         this.engineNo = engineNo;
     }
-    public Vehicle(String regNo, int engineNo,String chasisNo, String modelNo, String department, String fuelType, String odometerReading) {
+    public Vehicle(String regNo, int engineNo,String chasisNo, String modelNo, String department, String fuelType, int odometerReading) {
         this.regNo = regNo;
         this.chasisNo = chasisNo;
         this.modelNo = modelNo;
@@ -69,7 +68,7 @@ public class Vehicle implements Serializable {
         return fuelType;
     }
 
-    public String getOdometerReading() {
+    public int getOdometerReading() {
         return odometerReading;
     }
 
@@ -96,7 +95,7 @@ public class Vehicle implements Serializable {
         this.fuelType = fuel_type;
     }
 
-    public void setOdometerReading(String odometerReading) {
+    public void setOdometerReading(int odometerReading) {
         this.odometerReading = odometerReading;
     }
 

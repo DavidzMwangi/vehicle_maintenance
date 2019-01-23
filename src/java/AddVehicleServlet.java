@@ -81,7 +81,7 @@ public class AddVehicleServlet extends HttpServlet {
         String department = request.getParameter("department");
         int engineNo = Integer.parseInt(request.getParameter("engine_no"));
         String fuel_type = request.getParameter("fuel_type");
-        String odometerReading = request.getParameter("odometer_reading");
+        int odometerReading = Integer.parseInt(request.getParameter("odometer_reading"));
 
 
         Vehicle vehicle=new Vehicle(regNo, engineNo, chasisNo, modelNo, department, fuel_type, odometerReading);
