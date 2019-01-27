@@ -1,0 +1,29 @@
+SMAP
+workorder_jsp.java
+JSP
+*S JSP
+*F
++ 0 workorder.jsp
+foreman/workorder.jsp
++ 1 header.html
+foreman/../foreman/layouts/header.html
++ 2 footer.html
+foreman/../foreman/layouts/footer.html
+*L
+1:63
+1#1,139:64
+2#0,36:203
+37:499,8
+38,5:507
+42,12:241
+53:530,11
+54:541,5
+55:546
+55,73:255
+127:571,11
+128:582,5
+129:587
+129,82:330
+1#2,66:412
+210#0,4:478
+*E

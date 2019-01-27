@@ -90,7 +90,7 @@ public class AddVehicleServlet extends HttpServlet {
 
         //get the all the records and dispatch to the jsp page
 
-        List<Vehicle> allVehicles = VehicleDao.fetchAllProducts(connection);
+        List<Vehicle> allVehicles = VehicleDao.fetchAllVehicle(connection);
         request.setAttribute("vehicles", allVehicles);
 
 //        String path = "/foreman/allVehicles.jsp";

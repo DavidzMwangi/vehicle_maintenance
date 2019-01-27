@@ -46,6 +46,9 @@ public class Vehicle implements Serializable {
         this.engineNo=engineNo;
     }
 
+    public Vehicle(){
+        
+    }
     public String getRegNo() {
         return regNo;
     }

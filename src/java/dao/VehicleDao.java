@@ -39,7 +39,7 @@ public class VehicleDao {
     }
 
     //fetch allproducts
-    public static List<Vehicle> fetchAllProducts(Connection connection) {
+    public static List<Vehicle> fetchAllVehicle(Connection connection) {
         String sql = "SELECT * FROM vehicles";
         List<Vehicle> vehicles = null;
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -77,7 +77,49 @@ public class VehicleDao {
         }
     }
 
+  public static Vehicle fetchVehicle(Connection connection, int id){
+        String sql = "SELECT * FROM vehicles WHERE id=?";
+        Vehicle vehicle = null;
+        try (PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            if(resultSet.next()){
+                vehicle = new Vehicle();
+                vehicle.setId(id);
+                vehicle.setRegNo(resultSet.getString("reg_no"));
+                vehicle.setChasisNo(resultSet.getString("chasis_no"));
+                vehicle.setModelNo(resultSet.getString("model_no"));
+                vehicle.setDepartment(resultSet.getString("department"));
+                vehicle.setFuel(resultSet.getDouble("fuel_type"));
+                vehicle.setEngineNo(resultSet.getInt("engine_no"));
+                vehicle.setOdometerReading(resultSet.getInt("odometer_reading"));
+                
+            }
+            
+        }catch(SQLException e) {
+            e.printStackTrace();
+           
+        }
+        
+        return vehicle;
+    }
 
+  
+  
+  public static void updateVehicle(Connection connection, Vehicle vehicle){
+        String sql = "UPDATE vehicles set odometer_reading=?, fuel=? where id=? ";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1, vehicle.getOdometerReading());
+            statement.setDouble(2, vehicle.getFuel());
+            statement.setInt(3, vehicle.getId());
+            
+            statement.executeUpdate();
+   
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+  
     //delete a product
 
     public static void deleteProduct(Connection connection, String code) {
