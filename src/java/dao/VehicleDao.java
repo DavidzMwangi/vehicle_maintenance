@@ -22,14 +22,14 @@ public class VehicleDao {
     
      //create a new product
     public static void insertProduct(Connection connection, Vehicle vehicle) {
-        String sql = "INSERT INTO vehicles(reg_no,chasis_no,model_no,department,engine_no,fuel_type,odometer_reading) VALUES (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO vehicles(reg_no,chasis_no,model_no,department,engine_no,fuel,odometer_reading) VALUES (?,?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, vehicle.getRegNo());
             statement.setString(2, vehicle.getChasisNo());
             statement.setString(3, vehicle.getModelNo());
             statement.setString(4, vehicle.getDepartment());
             statement.setInt(5, vehicle.getEngineNo());
-            statement.setString(6, vehicle.getFuelType());
+            statement.setDouble(6, vehicle.getFuel());
             statement.setInt(7, vehicle.getOdometerReading());
 
             statement.executeUpdate();
@@ -66,11 +66,11 @@ public class VehicleDao {
        String modelNo=resultSet.getString("model_no");
        String department=resultSet.getString("department");
        int engine_no=resultSet.getInt("engine_no");
-       String fuel_type=resultSet.getString("fuel_type");
+       Double fuel=resultSet.getDouble("fuel");
        int odometerReading=resultSet.getInt("odometer_reading");
        
           
-       Vehicle vehicle=new Vehicle(regNo, engine_no, chasisNo, modelNo, department, fuel_type, odometerReading);
+       Vehicle vehicle=new Vehicle(regNo, engine_no, chasisNo, modelNo, department, fuel, odometerReading);
        vehicle.setId(resultSet.getInt("id"));
 
             vehicles.add(vehicle);

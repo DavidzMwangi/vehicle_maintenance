@@ -1,0 +1,17 @@
+SMAP
+allMechanics_jsp.java
+JSP
+*S JSP
+*F
++ 0 header.html
+foreman/../foreman/layouts/header.html
++ 1 allMechanics.jsp
+foreman/allMechanics.jsp
++ 2 footer.html
+foreman/../foreman/layouts/footer.html
+*L
+1,124:50
+1#1,19:174
+1#2,66:193
+19#1,2:259
+*E

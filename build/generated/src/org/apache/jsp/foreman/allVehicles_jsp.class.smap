@@ -4,11 +4,11 @@ JSP
 *S JSP
 *F
 + 0 header.html
-layouts/header.html
+foreman/../foreman/layouts/header.html
 + 1 allVehicles.jsp
-allVehicles.jsp
+foreman/allVehicles.jsp
 + 2 footer.html
-layouts/footer.html
+foreman/../foreman/layouts/footer.html
 *L
 1,124:50
 1#1,36:174

@@ -80,11 +80,11 @@ public class AddVehicleServlet extends HttpServlet {
         String modelNo = request.getParameter("model_no");
         String department = request.getParameter("department");
         int engineNo = Integer.parseInt(request.getParameter("engine_no"));
-        String fuel_type = request.getParameter("fuel_type");
+        Double fuel = Double.parseDouble(request.getParameter("fuel"));
         int odometerReading = Integer.parseInt(request.getParameter("odometer_reading"));
 
 
-        Vehicle vehicle=new Vehicle(regNo, engineNo, chasisNo, modelNo, department, fuel_type, odometerReading);
+        Vehicle vehicle=new Vehicle(regNo, engineNo, chasisNo, modelNo, department, fuel, odometerReading);
         Connection connection = DBConnection.getConnection();
         VehicleDao.insertProduct(connection, vehicle);
 
@@ -93,9 +93,12 @@ public class AddVehicleServlet extends HttpServlet {
         List<Vehicle> allVehicles = VehicleDao.fetchAllProducts(connection);
         request.setAttribute("vehicles", allVehicles);
 
-        String path = "/allVehicles.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
-        dispatcher.forward(request, response);
+//        String path = "/foreman/allVehicles.jsp";
+//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
+//        dispatcher.forward(request, response);
+
+           
+response.sendRedirect("http://localhost:8084/GroupProject/foreman/allVehicles.jsp");
         
        
     }

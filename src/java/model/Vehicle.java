@@ -25,8 +25,8 @@ public class Vehicle implements Serializable {
        String chasisNo;
        String modelNo;
        String department;
-       String fuelType; //double and fuel
-       int odometerReading; //int
+       Double fuel; 
+       int odometerReading; 
        int engineNo;
 
     public int getEngineNo() {
@@ -36,12 +36,12 @@ public class Vehicle implements Serializable {
     public void setEngineNo(int engineNo) {
         this.engineNo = engineNo;
     }
-    public Vehicle(String regNo, int engineNo,String chasisNo, String modelNo, String department, String fuelType, int odometerReading) {
+    public Vehicle(String regNo, int engineNo,String chasisNo, String modelNo, String department, Double fuel, int odometerReading) {
         this.regNo = regNo;
         this.chasisNo = chasisNo;
         this.modelNo = modelNo;
         this.department = department;
-        this.fuelType = fuelType;
+        this.fuel = fuel;
         this.odometerReading = odometerReading;
         this.engineNo=engineNo;
     }
@@ -64,8 +64,8 @@ public class Vehicle implements Serializable {
 
     
 
-    public String getFuelType() {
-        return fuelType;
+    public Double getFuel() {
+        return fuel;
     }
 
     public int getOdometerReading() {
@@ -91,8 +91,8 @@ public class Vehicle implements Serializable {
     }
 
   
-    public void setFuel_type(String fuel_type) {
-        this.fuelType = fuel_type;
+    public void setFuel(Double fuel) {
+        this.fuel = fuel;
     }
 
     public void setOdometerReading(int odometerReading) {
@@ -101,7 +101,7 @@ public class Vehicle implements Serializable {
 
     @Override
     public String toString() {
-        return "Vehicle{" + "id=" + id + ", regNo=" + regNo + ", chasisNo=" + chasisNo + ", modelNo=" + modelNo + ", department=" + department + ", fuelType=" + fuelType + ", odometerReading=" + odometerReading + ", engineNo=" + engineNo + '}';
+        return "Vehicle{" + "id=" + id + ", regNo=" + regNo + ", chasisNo=" + chasisNo + ", modelNo=" + modelNo + ", department=" + department + ", fuel=" + fuel + ", odometerReading=" + odometerReading + ", engineNo=" + engineNo + '}';
     }
 
    

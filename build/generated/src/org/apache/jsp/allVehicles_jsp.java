@@ -11,6 +11,12 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(2);
+    _jspx_dependants.add("/layouts/header.html");
+    _jspx_dependants.add("/layouts/footer.html");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -59,7 +65,6 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link href=\"assets/css/light-bootstrap-dashboard.css?v=2.0.1\" rel=\"stylesheet\" />\n");
       out.write("    <!-- CSS Just for demo purpose, don't include it in your project -->\n");
       out.write("    <link href=\"assets/css/demo.css\" rel=\"stylesheet\" />\n");
-      out.write("    \n");
       out.write("</head>\n");
       out.write("\n");
       out.write("<body>\n");
@@ -70,7 +75,7 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        Tip 2: you can also add an image using data-image tag\n");
       out.write("    -->\n");
-      out.write("            <div class=\"sidebar-wrapper\">\n");
+      out.write("              <div class=\"sidebar-wrapper\">\n");
       out.write("                <div class=\"logo\">\n");
       out.write("                    <a href=\"http://www.creative-tim.com\" class=\"simple-text\">\n");
       out.write("                        Creative Tim\n");
@@ -84,13 +89,13 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </a>\n");
       out.write("                    </li>\n");
       out.write("                    <li>\n");
-      out.write("                        <a class=\"nav-link\" href=\"/GroupProject/index.html\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"#\">\n");
       out.write("                            <i class=\"nc-icon nc-circle-09\"></i>\n");
       out.write("                            <p>New Vehicle</p>\n");
       out.write("                        </a>\n");
       out.write("                    </li>\n");
       out.write("                    <li>\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"/GroupProject/allVehicles.jsp\">\n");
       out.write("                            <i class=\"nc-icon nc-notes\"></i>\n");
       out.write("                            <p>All Vehicles</p>\n");
       out.write("                        </a>\n");
@@ -165,7 +170,10 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </ul>\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");
-      out.write("            </nav>\n");
+      out.write("            </nav>");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("            <!-- End Navbar -->\n");
       out.write("            <div class=\"content\">\n");
       out.write("                <div class=\"container-fluid\">\n");
@@ -210,7 +218,8 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \n");
       out.write("                </div>\n");
       out.write("            </div>\n");
-      out.write("            <footer class=\"footer\">\n");
+      out.write("                      ");
+      out.write("  <footer class=\"footer\">\n");
       out.write("                <div class=\"container\">\n");
       out.write("                    <nav>\n");
       out.write("                        <ul class=\"footer-menu\">\n");
@@ -236,7 +245,7 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </li>\n");
       out.write("                        </ul>\n");
       out.write("                        <p class=\"copyright text-center\">\n");
-      out.write("                            ©\n");
+      out.write("                            Â©\n");
       out.write("                            <script>\n");
       out.write("                                document.write(new Date().getFullYear())\n");
       out.write("                            </script>\n");
@@ -276,6 +285,8 @@ public final class allVehicles_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</script>\n");
       out.write("\n");
       out.write("</html>");
+      out.write('\n');
+      out.write(' ');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

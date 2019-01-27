@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -47,8 +47,6 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"en\">\n");
       out.write("\n");
@@ -175,66 +173,20 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </nav>");
       out.write("\n");
       out.write("\n");
-      out.write("                <div class=\"content\">\n");
-      out.write("                    <div class=\"container-fluid\">\n");
-      out.write("                        <div class=\"row\">\n");
-      out.write("                            <!--                        <div class=\"col-md-4\">\n");
-      out.write("                                                        <div class=\"card \">\n");
-      out.write("                                                            <div class=\"card-header \">\n");
-      out.write("                                                                <h4 class=\"card-title\">Email Statistics</h4>\n");
-      out.write("                                                                <p class=\"card-category\">Last Campaign Performance</p>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                            <div class=\"card-body \">\n");
-      out.write("                                                                <div id=\"chartPreferences\" class=\"ct-chart ct-perfect-fourth\"></div>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                            <div class=\"card-footer \">\n");
-      out.write("                                                                <div class=\"legend\">\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-info\"></i> Open\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-danger\"></i> Bounce\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-warning\"></i> Unsubscribe\n");
-      out.write("                                                                </div>\n");
-      out.write("                                                                <hr>\n");
-      out.write("                                                                <div class=\"stats\">\n");
-      out.write("                                                                    <i class=\"fa fa-clock-o\"></i> Campaign sent 2 days ago\n");
-      out.write("                                                                </div>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                        </div>\n");
-      out.write("                                                    </div>-->\n");
-      out.write("                            <div class=\"col-md-12\">\n");
-      out.write("                                <div class=\"card \">\n");
-      out.write("                                    <div class=\"card-header \">\n");
-      out.write("                                        <h4 class=\"card-title\">New Mechanic</h4>\n");
-      out.write("                                        <p class=\"card-category\">New Mechanic</p>\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <div class=\"card-body \">\n");
+      out.write("            <!-- End Navbar -->\n");
+      out.write("            <div class=\"content\">\n");
+      out.write("                <div class=\"container-fluid\">\n");
+      out.write("                    <div class=\"row\">\n");
       out.write("\n");
       out.write("\n");
-      out.write("                                        <form action=\"addMechanic\" method=\"post\">\n");
-      out.write("                                            <div class=\"form-group col-6\">\n");
-      out.write("                                                <input type=\"text\"  class=\"form-control\" name=\"name\" placeholder=\"Enter your Full Name\">\n");
-      out.write("                                            </div>\n");
-      out.write("                                            <div class=\"form-group col-6\">\n");
-      out.write("                                                <input type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Enter your  email\">\n");
-      out.write("                                            </div>\n");
-      out.write("                                            <div class=\"form-group col-6\">\n");
-      out.write("                                                <input type=\"password\" name=\"password\"  class=\"form-control\" placeholder=\"password\">\n");
-      out.write("                                            </div\n");
-      out.write("                                            <div class=\"form-group\">\n");
-      out.write("                                                <button type=\"submit\"  class=\"btn btn-primary\">Submit<button>\n");
-      out.write("                                            </div>\n");
-      out.write("\n");
-      out.write("                                        </form>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                                    </div>\n");
-      out.write("\n");
-      out.write("                                </div>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("\n");
+      out.write("<h1>Dashboard</h1>\n");
       out.write("                    </div>\n");
+      out.write("              \n");
       out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("          \n");
+      out.write("            \n");
+      out.write("            ");
       out.write("  <footer class=\"footer\">\n");
       out.write("                <div class=\"container\">\n");
       out.write("                    <nav>\n");
@@ -301,6 +253,7 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</script>\n");
       out.write("\n");
       out.write("</html>");
+      out.write('\n');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

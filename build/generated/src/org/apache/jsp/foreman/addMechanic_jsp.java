@@ -1,4 +1,4 @@
-package org.apache.jsp;
+package org.apache.jsp.foreman;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -13,8 +13,8 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/layouts/header.html");
-    _jspx_dependants.add("/layouts/footer.html");
+    _jspx_dependants.add("/foreman/../foreman/layouts/header.html");
+    _jspx_dependants.add("/foreman/../foreman/layouts/footer.html");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -54,8 +54,8 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<head>\n");
       out.write("    <meta charset=\"utf-8\" />\n");
-      out.write("    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"assets/img/apple-icon.png\">\n");
-      out.write("    <link rel=\"icon\" type=\"image/png\" href=\"assets/img/favicon.ico\">\n");
+      out.write("    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"../assets/img/apple-icon.png\">\n");
+      out.write("    <link rel=\"icon\" type=\"image/png\" href=\"../assets/img/favicon.ico\">\n");
       out.write("    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />\n");
       out.write("    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>\n");
       out.write("    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />\n");
@@ -63,10 +63,10 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700,200\" rel=\"stylesheet\" />\n");
       out.write("    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css\" />\n");
       out.write("    <!-- CSS Files -->\n");
-      out.write("    <link href=\"assets/css/bootstrap.min.css\" rel=\"stylesheet\" />\n");
-      out.write("    <link href=\"assets/css/light-bootstrap-dashboard.css?v=2.0.1\" rel=\"stylesheet\" />\n");
+      out.write("    <link href=\"../assets/css/bootstrap.min.css\" rel=\"stylesheet\" />\n");
+      out.write("    <link href=\"../assets/css/light-bootstrap-dashboard.css?v=2.0.1\" rel=\"stylesheet\" />\n");
       out.write("    <!-- CSS Just for demo purpose, don't include it in your project -->\n");
-      out.write("    <link href=\"assets/css/demo.css\" rel=\"stylesheet\" />\n");
+      out.write("    <link href=\"../assets/css/demo.css\" rel=\"stylesheet\" />\n");
       out.write("</head>\n");
       out.write("\n");
       out.write("<body>\n");
@@ -91,7 +91,7 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </a>\n");
       out.write("                    </li>\n");
       out.write("                    <li>\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">\n");
+      out.write("                        <a class=\"nav-link\" href=\"/GroupProject/newVehicle.jsp\">\n");
       out.write("                            <i class=\"nc-icon nc-circle-09\"></i>\n");
       out.write("                            <p>New Vehicle</p>\n");
       out.write("                        </a>\n");
@@ -178,28 +178,7 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"content\">\n");
       out.write("                    <div class=\"container-fluid\">\n");
       out.write("                        <div class=\"row\">\n");
-      out.write("                            <!--                        <div class=\"col-md-4\">\n");
-      out.write("                                                        <div class=\"card \">\n");
-      out.write("                                                            <div class=\"card-header \">\n");
-      out.write("                                                                <h4 class=\"card-title\">Email Statistics</h4>\n");
-      out.write("                                                                <p class=\"card-category\">Last Campaign Performance</p>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                            <div class=\"card-body \">\n");
-      out.write("                                                                <div id=\"chartPreferences\" class=\"ct-chart ct-perfect-fourth\"></div>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                            <div class=\"card-footer \">\n");
-      out.write("                                                                <div class=\"legend\">\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-info\"></i> Open\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-danger\"></i> Bounce\n");
-      out.write("                                                                    <i class=\"fa fa-circle text-warning\"></i> Unsubscribe\n");
-      out.write("                                                                </div>\n");
-      out.write("                                                                <hr>\n");
-      out.write("                                                                <div class=\"stats\">\n");
-      out.write("                                                                    <i class=\"fa fa-clock-o\"></i> Campaign sent 2 days ago\n");
-      out.write("                                                                </div>\n");
-      out.write("                                                            </div>\n");
-      out.write("                                                        </div>\n");
-      out.write("                                                    </div>-->\n");
+      out.write("                           \n");
       out.write("                            <div class=\"col-md-12\">\n");
       out.write("                                <div class=\"card \">\n");
       out.write("                                    <div class=\"card-header \">\n");
@@ -209,7 +188,7 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <div class=\"card-body \">\n");
       out.write("\n");
       out.write("\n");
-      out.write("                                        <form action=\"addMechanic\" method=\"post\">\n");
+      out.write("                                        <form action=\"/GroupProject/addMechanic\" method=\"post\">\n");
       out.write("                                            <div class=\"form-group col-6\">\n");
       out.write("                                                <input type=\"text\"  class=\"form-control\" name=\"name\" placeholder=\"Enter your Full Name\">\n");
       out.write("                                            </div>\n");
@@ -275,21 +254,21 @@ public final class addMechanic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("   \n");
       out.write("</body>\n");
       out.write("<!--   Core JS Files   -->\n");
-      out.write("<script src=\"assets/js/core/jquery.3.2.1.min.js\" type=\"text/javascript\"></script>\n");
-      out.write("<script src=\"assets/js/core/popper.min.js\" type=\"text/javascript\"></script>\n");
-      out.write("<script src=\"assets/js/core/bootstrap.min.js\" type=\"text/javascript\"></script>\n");
+      out.write("<script src=\"../assets/js/core/jquery.3.2.1.min.js\" type=\"text/javascript\"></script>\n");
+      out.write("<script src=\"../assets/js/core/popper.min.js\" type=\"text/javascript\"></script>\n");
+      out.write("<script src=\"../assets/js/core/bootstrap.min.js\" type=\"text/javascript\"></script>\n");
       out.write("<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->\n");
-      out.write("<script src=\"assets/js/plugins/bootstrap-switch.js\"></script>\n");
+      out.write("<script src=\"../assets/js/plugins/bootstrap-switch.js\"></script>\n");
       out.write("<!--  Google Maps Plugin    -->\n");
       out.write("<script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE\"></script>\n");
       out.write("<!--  Chartist Plugin  -->\n");
-      out.write("<script src=\"assets/js/plugins/chartist.min.js\"></script>\n");
+      out.write("<script src=\"../assets/js/plugins/chartist.min.js\"></script>\n");
       out.write("<!--  Notifications Plugin    -->\n");
-      out.write("<script src=\"assets/js/plugins/bootstrap-notify.js\"></script>\n");
+      out.write("<script src=\"../assets/js/plugins/bootstrap-notify.js\"></script>\n");
       out.write("<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->\n");
-      out.write("<script src=\"assets/js/light-bootstrap-dashboard.js?v=2.0.1\" type=\"text/javascript\"></script>\n");
+      out.write("<script src=\"../assets/js/light-bootstrap-dashboard.js?v=2.0.1\" type=\"text/javascript\"></script>\n");
       out.write("<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->\n");
-      out.write("<script src=\"assets/js/demo.js\"></script>\n");
+      out.write("<script src=\"../assets/js/demo.js\"></script>\n");
       out.write("<script type=\"text/javascript\">\n");
       out.write("    $(document).ready(function() {\n");
       out.write("        // Javascript method's body can be found in assets/js/demos.js\n");

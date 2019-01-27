@@ -5,6 +5,14 @@ JSP
 *F
 + 0 addMechanic.jsp
 addMechanic.jsp
++ 1 header.html
+layouts/header.html
++ 2 footer.html
+layouts/footer.html
 *L
-1,254:44
+1,2:50
+1#1,124:52
+3#0,63:176
+1#2,66:238
+65#0:304
 *E

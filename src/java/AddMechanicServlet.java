@@ -33,22 +33,7 @@ public class AddMechanicServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet AddMechanicServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet AddMechanicServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
-    }
+
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -62,7 +47,7 @@ public class AddMechanicServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+//        processRequest(request, response);
     }
 
     /**
@@ -88,10 +73,11 @@ public class AddMechanicServlet extends HttpServlet {
         Connection connection = DBConnection.getConnection();
         UsersDao.insertProduct(connection, user);
         
-        
-         String path = "/allMechanics.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
-        dispatcher.forward(request, response);
+        response.sendRedirect("http://localhost:8084/GroupProject/foreman/allMechanics.jsp");
+
+//         String path = "/allMechanics.jsp";
+//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
+//        dispatcher.forward(request, response);
         
     }
 
