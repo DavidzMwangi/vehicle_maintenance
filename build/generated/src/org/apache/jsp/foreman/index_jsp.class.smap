@@ -6,7 +6,7 @@ JSP
 + 0 header.html
 foreman/layouts/header.html
 + 1 index.jsp
-index.jsp
+foreman/index.jsp
 + 2 footer.html
 foreman/layouts/footer.html
 *L

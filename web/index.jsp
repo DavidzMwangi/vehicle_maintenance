@@ -1,17 +1,17 @@
-<%@ include file="/layouts/header.html" %>
+<%-- 
+    Document   : index
+    Created on : Jan 27, 2019, 2:35:06 PM
+    Author     : David
+--%>
 
-            <!-- End Navbar -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-
-
-<h1>Dashboard</h1>
-                    </div>
-              
-                </div>
-            </div>
-          
-            
-            <%@ include file="/layouts/footer.html" %>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>

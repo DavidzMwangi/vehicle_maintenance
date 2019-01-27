@@ -1,4 +1,4 @@
-package org.apache.jsp;
+package org.apache.jsp.foreman;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

@@ -8,9 +8,10 @@
         <servlet-name>AddMechanicServlet</servlet-name>
         <servlet-class>AddMechanicServlet</servlet-class>
     </servlet>
-    
-    
-    
+    <servlet>
+        <servlet-name>AllMechanicsServlet</servlet-name>
+        <servlet-class>AllMechanicsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -18,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>AddMechanicServlet</servlet-name>
         <url-pattern>/addMechanic</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllMechanicsServlet</servlet-name>
+        <url-pattern>/AllMechanicsServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
