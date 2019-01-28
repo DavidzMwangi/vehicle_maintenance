@@ -256,7 +256,19 @@ public final class workorder_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                                    </select>\n");
       out.write("                                                </div>\n");
       out.write("                                            </div>\n");
-      out.write("                                            \n");
+      out.write("                                                                                        <div class=\"form-group row\">\n");
+      out.write("                                                <label for=\"regNo\" class=\"col-sm-4 col-form-label\">Registration Number</label>\n");
+      out.write("                                                <div class=\"col-sm-8\">\n");
+      out.write("\n");
+      out.write("                                                    <select class=\"form-control\" id=\"v-dropdown\">\n");
+      out.write("                                                        <option value=\"\">select</option>\n");
+      out.write("                                                        ");
+      if (_jspx_meth_c_forEach_1(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                                                    </select>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
       out.write("                                            \n");
       out.write("                                            <input type=\"hidden\" value=\"\" name=\"vehicleId\" id=\"vehicleId\"/>\n");
       out.write("                                            <div class=\"form-group row\">\n");
@@ -325,7 +337,7 @@ public final class workorder_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                                    <select class=\"form-control\" id=\"v-dropdown\" name=\"mechanicId\">\n");
       out.write("                                                        <option value=\"\">select</option>\n");
       out.write("                                                        ");
-      if (_jspx_meth_c_forEach_1(_jspx_page_context))
+      if (_jspx_meth_c_forEach_2(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                                    </select>\n");
@@ -571,8 +583,8 @@ public final class workorder_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_1.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_1.setParent(null);
-    _jspx_th_c_forEach_1.setVar("mechanic");
-    _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanics}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_1.setVar("vehicle");
+    _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${vehicles}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     int[] _jspx_push_body_count_c_forEach_1 = new int[] { 0 };
     try {
       int _jspx_eval_c_forEach_1 = _jspx_th_c_forEach_1.doStartTag();
@@ -580,9 +592,9 @@ public final class workorder_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\n");
           out.write("                                                            <option value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanic.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${vehicle.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" >");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanic.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${vehicle.regNo}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</option>\n");
           out.write("                                                        ");
           int evalDoAfterBody = _jspx_th_c_forEach_1.doAfterBody();
@@ -600,6 +612,47 @@ public final class workorder_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspx_th_c_forEach_1.doFinally();
       _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_1);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_2.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_2.setParent(null);
+    _jspx_th_c_forEach_2.setVar("mechanic");
+    _jspx_th_c_forEach_2.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanics}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    int[] _jspx_push_body_count_c_forEach_2 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_2 = _jspx_th_c_forEach_2.doStartTag();
+      if (_jspx_eval_c_forEach_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                                            <option value=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanic.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" >");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mechanic.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</option>\n");
+          out.write("                                                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_2.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_2[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_2.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_2.doFinally();
+      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_2);
     }
     return false;
   }
