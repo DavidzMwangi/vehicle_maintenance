@@ -20,6 +20,10 @@
         <servlet-name>WorkOrderServlet</servlet-name>
         <servlet-class>WorkOrderServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AllVehiclesServlet</servlet-name>
+        <servlet-class>AllVehiclesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -30,7 +34,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AllMechanicsServlet</servlet-name>
-        <url-pattern>/AllMechanicsServlet</url-pattern>
+        <url-pattern>/allMechanics</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetVehicleDetailsServlet</servlet-name>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>WorkOrderServlet</servlet-name>
         <url-pattern>/workOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllVehiclesServlet</servlet-name>
+        <url-pattern>/allVehicles</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ include file="../foreman/layouts/header.html" %>
 
 
@@ -21,35 +23,34 @@
                                         <thead>
                                             <tr>
                                                 <th>Reg Number</th>
+                                                <th>Engine Number</th>
                                                 <th>Chasis Number</th>
                                                 <th>Model Number</th>
                                                 <th>Department</th>
-                                                <th>Contact Person</th>
-                                                <th>Fuel Type</th>
+                                                <th>Fuel</th>
                                                 <th>Odometer Reading</th>
-                                                <th>Extension</th>
+                                                <th>Actions</th> 
                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                            
-                                            <%-- <c:forEach var="vehicle" items="${vehicles}">
+                                            <c:forEach var="vehicle" items="${vehicles}">
                                                 
                                               <tr>
-                                                <td>${vehicle.reg_no}</td>
-                                                <td>${vehicle.chasis_no}</td>
-                                                <td>${vehicle.model_no}</td>
-                                                <td>${vehicle.department}</td>
-                                                <td>${vehicle.contact_person}</td>
-                                                <td>${vehicle.fuel_type}</td>
-                                                <td>${vehicle.odometer_reading}</td>
-                                                <td>${vehicle.extension}</td>
-                                                
+                                                <td>${vehicle.getRegNo()}</td>
+                                                <td>${vehicle.getEngineNo()}</td>
+                                                <td>${vehicle.getChasisNo()}</td>
+                                                <td>${vehicle.getModelNo()}</td>
+                                                <td>${vehicle.getDepartment()}</td>
+                                                <td>${vehicle.getFuel()}</td>
+                                                <td>${vehicle.getOdometerReading()}</td>
+                                                <td>Actions</td>
                                             </tr>  
                                                 
                                             </c:forEach>
                                             
-                                            --%>
+                                         
                                         </tbody>
                                     </table>
                                 </div>

@@ -25,7 +25,7 @@
                                             <div class="form-group col-6">
                                                 <input type="password" name="password"  class="form-control" placeholder="password">
                                             </div
-                                            <div class="form-group">
+                                            <div class="col-12">
                                                 <button type="submit"  class="btn btn-primary">Submit<button>
                                             </div>
 
@@ -40,5 +40,5 @@
                         </div>
 
                     </div>
-                </div>
+               
 <%@ include file="../foreman/layouts/footer.html" %>
