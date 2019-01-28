@@ -34,7 +34,7 @@ public class WorkOrderServlet extends HttpServlet {
         int vehicleOdometer = Integer.parseInt(request.getParameter("vehicleOdometer"));
         double vehicleFuel = Double.parseDouble(request.getParameter("vehicleFuel"));
 
-        String contact = request.getParameter("contact");
+//        String contact = request.getParameter("contact");
         String ptime = request.getParameter("ptime");
 
         String instruction = request.getParameter("instruction");
@@ -60,10 +60,10 @@ public class WorkOrderServlet extends HttpServlet {
         Connection connection = db.DBConnection.getConnection();
         VehicleDao.updateVehicle(connection, vehicle);
 
-        WorkOrder workOrder = new WorkOrder(vehicleId, mechanicId, contact, instruction, isServicing, c.getTime());
+        WorkOrder workOrder = new WorkOrder(vehicleId, mechanicId, instruction, isServicing, c.getTime());
         WorkOrderDao.insertVehicle(connection, workOrder);
 
-        response.sendRedirect("/GroupProject/foreman/dashboard?status=success");
+        response.sendRedirect("/GroupProject/foreman/index.jsp?status=success");
 
     }
 

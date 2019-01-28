@@ -138,28 +138,17 @@
                                             </div>
                                             
                                         </c:if>
-                                        <form action="dashboard" method="post">
+                                        <form action="workOrder" method="post">
 
 
 
-                                            <div class="form-group row">
-                                                <label for="regNo" class="col-sm-4 col-form-label">Registration Number</label>
-                                                <div class="col-sm-8">
-
-                                                    <select class="form-control" id="v-dropdown">
-                                                        <option value="">select</option>
-                                                        <c:forEach var="vehicle" items="${vehicles}">
-                                                            <option value="${vehicle.id}" >${vehicle.regNo}</option>
-                                                        </c:forEach>
-                                                    </select>
-                                                </div>
-                                            </div>
+         
                                                                                         <div class="form-group row">
                                                 <label for="regNo" class="col-sm-4 col-form-label">Registration Number</label>
                                                 <div class="col-sm-8">
 
-                                                    <select class="form-control" id="v-dropdown">
-                                                        <option value="">select</option>
+                                                    <select class="form-control" name="vehicleId" id="v-dropdown">
+<!--                                                        <option value="">select</option>-->
                                                         <c:forEach var="vehicle" items="${vehicles}">
                                                             <option value="${vehicle.id}" >${vehicle.regNo}</option>
                                                         </c:forEach>
@@ -167,7 +156,7 @@
                                                 </div>
                                             </div>
                                             
-                                            <input type="hidden" value="" name="vehicleId" id="vehicleId"/>
+<!--                                            <input type="hidden" value="" name="vehicleId" id="vehicleId"/>-->
                                             <div class="form-group row">
                                                 <label for="department" class="col-sm-4 col-form-label">Department</label>
                                                 <div class="col-sm-8">
@@ -213,12 +202,12 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group row">
+<!--                                            <div class="form-group row">
                                                 <label for="contactPerson" class="col-sm-4 col-form-label">Contact Person</label>
                                                 <div class="col-sm-8">
                                                     <input type="text" class="form-control" id="contactPerson" name="contact">
                                                 </div>
-                                            </div>
+                                            </div>-->
 
                                             <div class="form-group row">
                                                 <label for="ptime" class="col-sm-4 col-form-label">Promised Time</label>
@@ -353,7 +342,7 @@
             </footer>
         </div>
     </div>
-   
+  
 </body>
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>

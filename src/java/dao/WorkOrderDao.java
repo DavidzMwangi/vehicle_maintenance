@@ -15,15 +15,16 @@ public class WorkOrderDao {
 
     //create a new product
     public static void insertVehicle(Connection connection, WorkOrder workOrder) {
-        String sql = "INSERT INTO word_order(vehicle_id, contact, work_instructions, mechanic_id, servicing, date) VALUES (?,?,?,?,?,?)";
+        String sql = "INSERT INTO word_order(vehicle_id, work_instructions, mechanic_id, servicing, date,vehicle_condition) VALUES (?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, workOrder.getVehicleId());
-            statement.setString(2, workOrder.getContact());
-            statement.setString(3, workOrder.getWorkInstructions());
-            statement.setInt(4, workOrder.getMechanicId());
-            statement.setBoolean(5, workOrder.isServicing());
-            statement.setTimestamp(6, new Timestamp(workOrder.getPromisedDate().getTime()));
-
+            statement.setString(2, workOrder.getWorkInstructions());
+            statement.setInt(3, workOrder.getMechanicId());
+            statement.setBoolean(4, workOrder.isServicing());
+            statement.setTimestamp(5, new Timestamp(workOrder.getPromisedDate().getTime()));
+            statement.setString(6,"vehicle_condition");
+            
+            
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

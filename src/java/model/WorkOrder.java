@@ -18,7 +18,6 @@ public class WorkOrder implements Serializable {
     private int vehicleId;
     private int mechanicId;
     private String workInstructions;
-    private String contact;
     private boolean servicing;
     private boolean completed;
     private boolean confirmed;
@@ -28,13 +27,12 @@ public class WorkOrder implements Serializable {
     public WorkOrder() {
     }
 
-    public WorkOrder(int vehicleId, int mechanicId, String contact, String workInstructions, boolean servicing, Date promisedDate) {
+    public WorkOrder(int vehicleId, int mechanicId, String workInstructions, boolean servicing, Date promisedDate) {
         this.id = id;
         this.vehicleId = vehicleId;
         this.mechanicId = mechanicId;
         this.workInstructions = workInstructions;
         this.servicing = servicing;
-        this.contact = contact;
         this.promisedDate = promisedDate;
     }
 
@@ -113,13 +111,7 @@ public class WorkOrder implements Serializable {
         this.confirmed = confirmed;
     }
 
-    public String getContact() {
-        return contact;
-    }
-
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
+  
     
     
 
