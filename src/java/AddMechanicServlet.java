@@ -10,6 +10,7 @@ import db.DBConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -73,7 +74,17 @@ public class AddMechanicServlet extends HttpServlet {
         Connection connection = DBConnection.getConnection();
         UsersDao.insertProduct(connection, user);
         
-        response.sendRedirect("http://localhost:8084/GroupProject/foreman/allMechanics.jsp");
+        
+         String url = "/foreman/allMechanics.jsp";
+
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        List<User> mechanics = UsersDao.fetchMechanics(connection);
+
+        request.setAttribute("mechanics", mechanics);
+
+        dispatcher.forward(request, response);
+//        response.sendRedirect("http://localhost:8084/GroupProject/foreman/allMechanics.jsp");
 
 //         String path = "/allMechanics.jsp";
 //        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
