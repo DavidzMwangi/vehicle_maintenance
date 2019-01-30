@@ -93,12 +93,12 @@ public class AddVehicleServlet extends HttpServlet {
         List<Vehicle> allVehicles = VehicleDao.fetchAllVehicle(connection);
         request.setAttribute("vehicles", allVehicles);
 
-//        String path = "/foreman/allVehicles.jsp";
-//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
-//        dispatcher.forward(request, response);
+        String path = "/foreman/allVehicles.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
+        dispatcher.forward(request, response);
 
            
-response.sendRedirect("http://localhost:8084/GroupProject/foreman/allVehicles.jsp");
+//response.sendRedirect("http://localhost:8084/GroupProject/foreman/allVehicles.jsp");
         
        
     }
