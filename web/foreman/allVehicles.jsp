@@ -45,7 +45,7 @@
                                                 <td>${vehicle.getDepartment()}</td>
                                                 <td>${vehicle.getFuel()}</td>
                                                 <td>${vehicle.getOdometerReading()}</td>
-                                                <td>Actions</td>
+                                                <td><button class="btn btn-danger">Delete</button></td>
                                             </tr>  
                                                 
                                             </c:forEach>
