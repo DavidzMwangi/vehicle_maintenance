@@ -4,26 +4,18 @@
  * and open the template in the editor.
  */
 
-import dao.UsersDao;
-import dao.VehicleDao;
-import db.DBConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.util.List;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.User;
-import model.Vehicle;
 
 /**
  *
- * @author mwang
+ * @author David
  */
-public class AddMechanicServlet extends HttpServlet {
+public class AllWorkOrderServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,7 +26,22 @@ public class AddMechanicServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet AllWorkOrderServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet AllWorkOrderServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -48,10 +55,7 @@ public class AddMechanicServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        String path = "/foreman/addMechanic.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
-        dispatcher.forward(request, response);
+        processRequest(request, response);
     }
 
     /**
@@ -65,34 +69,7 @@ public class AddMechanicServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
-        
-          String fullName=request.getParameter("name");
-        String email=request.getParameter("email");
-        String password=request.getParameter("password");
-        
-           User user = new User(email, fullName, 0, password);
-
-        Connection connection = DBConnection.getConnection();
-        UsersDao.insertProduct(connection, user);
-        
-        
-         String url = "/foreman/allMechanics.jsp";
-
-
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        List<User> mechanics = UsersDao.fetchMechanics(connection);
-
-        request.setAttribute("mechanics", mechanics);
-
-        dispatcher.forward(request, response);
-//        response.sendRedirect("http://localhost:8084/GroupProject/foreman/allMechanics.jsp");
-
-//         String path = "/allMechanics.jsp";
-//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
-//        dispatcher.forward(request, response);
-        
+        processRequest(request, response);
     }
 
     /**
