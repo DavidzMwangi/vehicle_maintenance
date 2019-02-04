@@ -61,7 +61,9 @@ public class AddVehicleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+String path = "/foreman/newVehicle.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(path);
+        dispatcher.forward(request, response);
     }
 
     /**
@@ -98,7 +100,6 @@ public class AddVehicleServlet extends HttpServlet {
         dispatcher.forward(request, response);
 
            
-//response.sendRedirect("http://localhost:8084/GroupProject/foreman/allVehicles.jsp");
         
        
     }
