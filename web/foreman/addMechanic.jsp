@@ -23,7 +23,7 @@
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Email</label>
-                                                <input type="email" name="email" class="form-control" placeholder="Enter your  email">
+                                                <input type="email" name="email" class="form-control " placeholder="Enter your  email">
                                             </div>
                                                 
                                             </div>
