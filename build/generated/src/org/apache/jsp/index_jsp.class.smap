@@ -3,15 +3,8 @@ index_jsp.java
 JSP
 *S JSP
 *F
-+ 0 header.html
-foreman/layouts/header.html
-+ 1 index.jsp
++ 0 index.jsp
 index.jsp
-+ 2 footer.html
-foreman/layouts/footer.html
 *L
-1,139:50
-1#1,16:189
-1#2,66:205
-16#1,2:271
+1,97:44
 *E
