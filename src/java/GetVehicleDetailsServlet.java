@@ -26,9 +26,6 @@ import com.google.gson.Gson;
 public class GetVehicleDetailsServlet extends HttpServlet {
 
     
-
-
-    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
