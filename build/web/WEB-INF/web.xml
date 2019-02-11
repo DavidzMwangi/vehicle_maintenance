@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddVehicleServlet</servlet-name>
+        <servlet-class>AddVehicleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddMechanicServlet</servlet-name>
+        <servlet-class>AddMechanicServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AllMechanicsServlet</servlet-name>
+        <servlet-class>AllMechanicsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetVehicleDetailsServlet</servlet-name>
+        <servlet-class>GetVehicleDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WorkOrderServlet</servlet-name>
+        <servlet-class>WorkOrderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AllVehiclesServlet</servlet-name>
+        <servlet-class>AllVehiclesServlet</servlet-class>
+    </servlet>
+    
+     <servlet>
+        <servlet-name>AuthRegisterServlet</servlet-name>
+        <servlet-class>AuthRegisterServlet</servlet-class>
+    </servlet>
+    
+    
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>AddVehicleServlet</servlet-name>
+        <url-pattern>/addVehicle</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddMechanicServlet</servlet-name>
+        <url-pattern>/addMechanic</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllMechanicsServlet</servlet-name>
+        <url-pattern>/allMechanics</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVehicleDetailsServlet</servlet-name>
+        <url-pattern>/getVehicleDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WorkOrderServlet</servlet-name>
+        <url-pattern>/workOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllVehiclesServlet</servlet-name>
+        <url-pattern>/allVehicles</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>AuthRegisterServlet</servlet-name>
+        <url-pattern>/signup_user</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

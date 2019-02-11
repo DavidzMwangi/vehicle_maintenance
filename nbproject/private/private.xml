@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/index.jsp</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/workorder.jsp</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/WEB-INF/web.xml</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/src/java/dao/UsersDao.java</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/src/java/LoginServlet.java</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/signup.jsp</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/src/java/model/User.java</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/index.jsp</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/layouts/sidebar.html</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/layouts/footer.html</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/web/foreman/layouts/header.html</file>
+            <file>file:/C:/GroupProject/GroupProject/vehicle_manintenance/vehicle_maintenance/src/java/AuthRegisterServlet.java</file>
+        </group>
+    </open-files>
+</project-private>
