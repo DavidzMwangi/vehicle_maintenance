@@ -15,7 +15,7 @@ public class WorkOrderDao {
 
     //create a new product
     public static void insertVehicle(Connection connection, WorkOrder workOrder) {
-        String sql = "INSERT INTO word_order(vehicle_id, work_instructions, mechanic_id, servicing, date,vehicle_condition) VALUES (?,?,?,?,?,?)";
+        String sql = "INSERT INTO work_order(vehicle_id, work_instructions, mechanic_id, servicing, date,vehicle_condition) VALUES (?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, workOrder.getVehicleId());
             statement.setString(2, workOrder.getWorkInstructions());
