@@ -21,7 +21,9 @@ public class WorkOrder implements Serializable {
     private boolean servicing;
     private boolean completed;
     private boolean confirmed;
+    private String createdAt;
 
+    
     private Date promisedDate;
 
     public WorkOrder() {
@@ -112,7 +114,13 @@ public class WorkOrder implements Serializable {
     }
 
   
-    
+      public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
     
 
 }
