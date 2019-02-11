@@ -32,6 +32,10 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShowWorkOrdersServlet</servlet-name>
+        <servlet-class>ShowWorkOrdersServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowWorkOrdersServlet</servlet-name>
+        <url-pattern>/ShowWorkOrders</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
