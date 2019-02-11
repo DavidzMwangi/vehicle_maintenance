@@ -109,9 +109,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\n");
       out.write("    </div>\n");
       out.write("    \n");
-      out.write("    <script src=\"assets/js/jquery-3.3.1.slim.min.js\"></script>\n");
-      out.write("    <script src=\"assets/js/popper.min.js\"></script>\n");
-      out.write("    <script src=\"assets/js/parsely.min.js\"></script>\n");
+      out.write("    <script src=\"/assets/js/jquery-3.3.1.slim.min.js\"></script>\n");
+      out.write("    <script src=\"/assets/js/popper.min.js\"></script>\n");
+      out.write("    <script src=\"/assets/js/parsely.min.js\"></script>\n");
       out.write("    <script type=\"text/javascript\">\n");
       out.write("        $(function () {\n");
       out.write("          $('#login').parsley().on('field:validated', function() {\n");

@@ -50,7 +50,7 @@
                             </div>
                             <p> Not yet registered please Sign Up</p>
                             <button type="submit" class="btn btn-primary">Log In</button>
-                            <a href="signup.jsp">sign up</a>
+                            <a href="/GroupProject/foreman/signup.jsp">sign up</a>
                         </form>
                     </div>
                 </div>
@@ -66,9 +66,9 @@
         </div>
     </div>
     
-    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/parsely.min.js"></script>
+    <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/parsely.min.js"></script>
     <script type="text/javascript">
         $(function () {
           $('#login').parsley().on('field:validated', function() {

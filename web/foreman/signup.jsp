@@ -65,7 +65,7 @@
                                     <input type="password" class="form-control" col-sm-2 col-form-label id="confirmation"
                                            placeholder="Confirm password" name="confirmation"  required="">
                                 </div>
-                                <a href="index.jsp">Log In</a>
+                                <a href="../index.jsp">Log In</a>
                                 <button type="submit" class="btn btn-primary" onClick="validate(this.form)">Sign Up</button>
 
                             </form>
