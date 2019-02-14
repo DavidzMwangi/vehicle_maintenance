@@ -36,6 +36,10 @@
         <servlet-name>ShowWorkOrdersServlet</servlet-name>
         <servlet-class>ShowWorkOrdersServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewSparesServlet</servlet-name>
+        <servlet-class>ViewSparesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>ShowWorkOrdersServlet</servlet-name>
         <url-pattern>/ShowWorkOrders</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewSparesServlet</servlet-name>
+        <url-pattern>/view_spares</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

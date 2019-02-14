@@ -18,7 +18,7 @@
                                    
                                     
                                     
-                                    <table class="table table-responsive table-bordered">
+                                    <table class="table table-responsive">
                                         
                                         <thead>
                                             <tr>

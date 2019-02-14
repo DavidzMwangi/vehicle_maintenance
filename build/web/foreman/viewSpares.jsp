@@ -1,9 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ include file="../foreman/layouts/header.html" %>
-
-
-            <!-- End Navbar -->
+ 
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -11,41 +9,38 @@
                         <div class="col-md-12">
                             <div class="card ">
                                 <div class="card-header ">
-                                    <h4 class="card-title">New Vehicle</h4>
-                                    <p class="card-category">New Vehicle</p>
+                                    <h4 class="card-title">Spares</h4>
+                                    <p class="card-category">Work Order Spares</p>
                                 </div>
                                 <div class="card-body ">
                                    
-                                    
-                                    
                                     <table class="table table-responsive">
                                         
                                         <thead>
                                             <tr>
-                                                <th>Reg Number</th>
-                                                <th>Engine Number</th>
-                                                <th>Chasis Number</th>
-                                                <th>Model Number</th>
-                                                <th>Department</th>
-                                                <th>Fuel</th>
-                                                <th>Odometer Reading</th>
-                                                <th>Actions</th> 
+                                                <th>Spare Name</th>
+                                                <th>Approval</th>
+                                                  <th>Actions</th>
+
                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                            
-                                            <c:forEach var="vehicle" items="${vehicles}">
-                                                
+                                            <c:forEach var="spare" items="${spares}">
+                                              
                                               <tr>
-                                                <td>${vehicle.getRegNo()}</td>
-                                                <td>${vehicle.getEngineNo()}</td>
-                                                <td>${vehicle.getChasisNo()}</td>
-                                                <td>${vehicle.getModelNo()}</td>
-                                                <td>${vehicle.getDepartment()}</td>
-                                                <td>${vehicle.getFuel()}</td>
-                                                <td>${vehicle.getOdometerReading()}</td>
-                                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                                                <td>${spare.getName()}</td>
+                                                <td> 
+                                                    <c:if test="${spare.getIsApproved()==true}">
+                                                        <span class="badge badge-success">Approved</span>
+                                                    </c:if>
+                                                       <c:if test="${spare.getIsApproved()==false}">
+                                                        <button class="btn btn-primary">Approve</span>
+                                                    </c:if>
+                                                        
+                                                   </td>
+                                                   <td><a href="#" >Delete</a></td>
                                             </tr>  
                                                 
                                             </c:forEach>
