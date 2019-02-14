@@ -25,7 +25,7 @@
                                    
                                     
                                     
-                                    <table class="table table-responsive table-bordered">
+                                    <table class="table table-responsive ">
                                         
                                         <thead>
                                             <tr>
@@ -49,7 +49,7 @@
                                                 <td>${workorder.getCreatedAt()}</td>
                                                 <td>${workorder.getWorkInstructions()}</td>
                                                 <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
-                                                <td><a href="/GroupProject/spares/${workorder.getId()}" class="btn btn-primary">View Spares</a></td>
+                                                <td><a href="/GroupProject/view_spares?work_order_id=${workorder.getId()}" class="btn btn-primary">View Spares</a></td>
                                                 <td><a href="/GroupProject/extraDefects/${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
                                                 
                                                 <td>Actions </td>
