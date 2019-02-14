@@ -40,6 +40,10 @@
         <servlet-name>ViewSparesServlet</servlet-name>
         <servlet-class>ViewSparesServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ApproveSpareServlet</servlet-name>
+        <servlet-class>ApproveSpareServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>ViewSparesServlet</servlet-name>
         <url-pattern>/view_spares</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ApproveSpareServlet</servlet-name>
+        <url-pattern>/approveSpare</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

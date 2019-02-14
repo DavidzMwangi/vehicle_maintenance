@@ -36,7 +36,7 @@
                                                         <span class="badge badge-success">Approved</span>
                                                     </c:if>
                                                        <c:if test="${spare.getIsApproved()==false}">
-                                                        <button class="btn btn-primary">Approve</span>
+                                                        <a href="/GroupProject/approveSpare?spare_id=${spare.getId()}&work_order_id=${spare.getWorkOrderId()}" class="btn btn-primary">Approve</span>
                                                     </c:if>
                                                         
                                                    </td>

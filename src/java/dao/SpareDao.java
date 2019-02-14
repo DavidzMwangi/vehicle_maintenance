@@ -46,4 +46,18 @@ public class SpareDao {
             spares.add(spare);
         }
     }
+
+    public static void approveSpare(Connection connection, int spareId) {
+
+        String sql="UPDATE spares set is_approved=? where id=?";
+        try(PreparedStatement statement=connection.prepareStatement(sql)){
+            statement.setBoolean(1, true);
+            statement.setInt(2,spareId);
+            
+            statement.executeUpdate();
+        }catch(SQLException e){
+            
+        }
+            
+    }
 }
