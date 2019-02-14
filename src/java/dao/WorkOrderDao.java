@@ -37,7 +37,16 @@ public class WorkOrderDao {
     
     
      public static List<WorkOrder> fetchWorkOrder(Connection connection){
-        String sql="SELECT * FROM work_order";
+//        String sql="SELECT * FROM work_order";
+        String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,vehicles.reg_no FROM work_order LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id";
+//        
+        /*
+        SELECT A.`first_name` , A.`last_name` , B.`title`
+FROM `members`AS A
+INNER JOIN `movies` AS B
+ON B.`id` = A.`movie_id`
+        */
+        
          List<WorkOrder> workorder = null;
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             ResultSet resultSet = statement.executeQuery();
@@ -53,12 +62,12 @@ public class WorkOrderDao {
      private static void setWorkOrder(List<WorkOrder> workorders, ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
 
-            
-          
+           
        WorkOrder workorder=new WorkOrder();
        workorder.setId(resultSet.getInt("id"));
        workorder.setCreatedAt(resultSet.getString("created_at"));
-       workorder.setVehicleId(resultSet.getInt("vehicle_id"));
+       workorder.setRegNo(resultSet.getString("reg_no"));
+       workorder.setWorkInstructions(resultSet.getString("work_instructions"));
 
             workorders.add(workorder);
         }

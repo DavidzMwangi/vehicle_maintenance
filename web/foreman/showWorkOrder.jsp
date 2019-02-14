@@ -31,9 +31,13 @@
                                             <tr>
                                                 
                                                
-                                                <th>Work Orders</th>
-                                               
-                                               
+                                                <th>Vehicle Name</th>
+                                        <th>Date</th>
+                                          <th>Work Instructions</th> 
+                                          <th>More Details</th> 
+                                             <th>Spares</th> 
+                                             <th>Approve Extra Defects</th> 
+                                             <th>Actions</th> 
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -41,10 +45,14 @@
                                             <c:forEach var="workorder" items="${workorders}">
                                                 
                                               <tr>
-                                                <td>${workorder.getVehicleId()}</td>
+                                                <td>${workorder.getRegNo()}</td>
                                                 <td>${workorder.getCreatedAt()}</td>
-                                                <td>${workorder.getId()}</td>
-                                                <td></td>
+                                                <td>${workorder.getWorkInstructions()}</td>
+                                                <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
+                                                <td><a href="/GroupProject/spares/${workorder.getId()}" class="btn btn-primary">View Spares</a></td>
+                                                <td><a href="/GroupProject/extraDefects/${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
+                                                
+                                                <td>Actions </td>
                                             </tr>  
                                                 
                                             </c:forEach>

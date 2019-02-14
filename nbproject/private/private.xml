@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/showWorkOrder.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/WorkOrder.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/WorkOrderDao.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/index.jsp</file>
@@ -13,10 +14,12 @@
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allVehicles.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/workorder.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AddMechanicServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AuthRegisterServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/js/demo.js</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AllMechanicsServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/signup.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/addMechanic.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ShowWorkOrdersServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/db/DBConnection.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allWorkOrders.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/newVehicle.jsp</file>
@@ -26,6 +29,7 @@
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allMechanics.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/layouts/sidebar.html</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/index.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/LoginServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/WEB-INF/web.xml</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/UsersDao.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/VehicleDao.java</file>
