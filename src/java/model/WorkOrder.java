@@ -22,6 +22,15 @@ public class WorkOrder implements Serializable {
     private boolean completed;
     private boolean confirmed;
     private String createdAt;
+    private String regNo;
+
+    public String getRegNo() {
+        return regNo;
+    }
+
+    public void setRegNo(String regNo) {
+        this.regNo = regNo;
+    }
 
     
     private Date promisedDate;
