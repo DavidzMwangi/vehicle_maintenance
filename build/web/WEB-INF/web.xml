@@ -52,6 +52,10 @@
         <servlet-name>ApproveDefectServlet</servlet-name>
         <servlet-class>ApproveDefectServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MechanicWorkOrdersServlet</servlet-name>
+        <servlet-class>MechanicWorkOrdersServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>ApproveDefectServlet</servlet-name>
         <url-pattern>/approveDefect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MechanicWorkOrdersServlet</servlet-name>
+        <url-pattern>/myWorkOrders</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
