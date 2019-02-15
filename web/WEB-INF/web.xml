@@ -44,6 +44,14 @@
         <servlet-name>ApproveSpareServlet</servlet-name>
         <servlet-class>ApproveSpareServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewAdditionalDefectsServlet</servlet-name>
+        <servlet-class>ViewAdditionalDefectsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ApproveDefectServlet</servlet-name>
+        <servlet-class>ApproveDefectServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -87,6 +95,14 @@
     <servlet-mapping>
         <servlet-name>ApproveSpareServlet</servlet-name>
         <url-pattern>/approveSpare</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewAdditionalDefectsServlet</servlet-name>
+        <url-pattern>/additionalDefects</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ApproveDefectServlet</servlet-name>
+        <url-pattern>/approveDefect</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
