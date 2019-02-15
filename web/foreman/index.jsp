@@ -1,6 +1,5 @@
 <%@ include file="/foreman/layouts/header.html" %>
 
-            <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
