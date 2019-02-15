@@ -72,4 +72,38 @@ ON B.`id` = A.`movie_id`
             workorders.add(workorder);
         }
     }
+     
+     
+     public static List<WorkOrder> mechanicWorkOrders(Connection connection,int mechanic_id){
+         
+//         String sql="SELECT * FROM work_order WHERE mechanic_id =?";
+                 String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,vehicles.reg_no FROM work_order  LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id WHERE work_order.mechanic_id =?";
+
+         List<WorkOrder> workOrders=null;
+         try (PreparedStatement statement = connection.prepareStatement(sql)){
+               statement.setInt(1, mechanic_id);
+               ResultSet resultSet = statement.executeQuery();
+            workOrders= new ArrayList<>();
+            setWorkOrder(workOrders, resultSet);
+            return workOrders;
+               
+         }catch(SQLException e){
+             e.printStackTrace();
+             return null;
+         }
+     }
+     
+//     private static void setMechanicWorkOrder(List<WorkOrder> workorders, ResultSet resultSet) throws SQLException {
+//        while (resultSet.next()) {
+//
+//           
+//       WorkOrder workorder=new WorkOrder();
+//       workorder.setId(resultSet.getInt("id"));
+//       workorder.setCreatedAt(resultSet.getString("created_at"));
+//       workorder.setRegNo(resultSet.getString("reg_no"));
+//       workorder.setWorkInstructions(resultSet.getString("work_instructions"));
+//
+//            workorders.add(workorder);
+//        }
+//    }
 }
