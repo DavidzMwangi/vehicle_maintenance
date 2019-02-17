@@ -3,49 +3,58 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/conf/MANIFEST.MF</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/Vehicle.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/User.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/viewSpares.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/AdditionalDefectDao.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/workorder.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/sidebar.html</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/js/demo.js</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/addMechanic.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ShowWorkOrdersServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/db/DBConnection.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/SpareDao.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/additionalDefects.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/newVehicle.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AddVehicleServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/MechanicWorkOrdersServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/addChecklist.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allMechanics.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/header.html</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/layouts/sidebar.html</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/index.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/footer.html</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/index.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/WEB-INF/web.xml</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/css/bootstrap.min.css</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ApproveDefectServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AllVehiclesServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/Spare.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/showWorkOrder.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/WorkOrder.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/WorkOrderDao.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/index.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/WorkOrderServlet.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/conf/MANIFEST.MF</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/Vehicle.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/User.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/viewSpares.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allVehicles.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/workorder.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ViewSparesServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AddMechanicServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AuthRegisterServlet.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/sidebar.html</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/js/demo.js</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/viewWorkOrders.jsp</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AllMechanicsServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/signup.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/addMechanic.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ShowWorkOrdersServlet.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/db/DBConnection.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/SpareDao.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/newVehicle.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AddVehicleServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/layouts/header.html</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/layouts/footer.html</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/allMechanics.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/header.html</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/layouts/sidebar.html</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/index.jsp</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AddChecklistServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ApproveSpareServlet.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/layouts/footer.html</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/LoginServlet.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/mechanic/index.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/WEB-INF/web.xml</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/AdditionalDefect.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/UsersDao.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/dao/VehicleDao.java</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/css/bootstrap.min.css</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/AllVehiclesServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/GetVehicleDetailsServlet.java</file>
+            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/ViewAdditionalDefectsServlet.java</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/assets/css/light-bootstrap-dashboard.css</file>
             <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/web/foreman/redirector.jsp</file>
-            <file>file:/D:/Masomo/masomo%20uni/4rth%20yia/sem%201/COMP%20441%20Web%20Design%20and%20Development/JetBeans%20Project/GroupProject/src/java/model/Spare.java</file>
         </group>
     </open-files>
 </project-private>
