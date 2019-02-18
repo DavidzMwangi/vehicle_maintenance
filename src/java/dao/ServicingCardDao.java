@@ -23,7 +23,7 @@ public class ServicingCardDao {
                  
          String sql = "INSERT INTO servicing_card(engine_oil_change,work_order_id,gearbox_oil_level,diff_oil_level, radiator_water_level,"
                  + "power_steering,brake_fluid,clutch_fluid,fan_belt_tension,battery_electrolyte_water,all_lights_checked,"
-                 + "battery_terminal_tight_greased,windscreen_wiper_water,engine_oil_level) VALUES (?,?)";
+                 + "battery_terminal_tight_greased,windscreen_wiper_water,engine_oil_level) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
                     statement.setBoolean(1, servicingCard.isEngineOilChange());
                     statement.setInt(2, servicingCard.getWorkOrderId());
