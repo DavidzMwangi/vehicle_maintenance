@@ -68,6 +68,10 @@
         <servlet-name>AddSpareServlet</servlet-name>
         <servlet-class>AddSpareServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddServicingCardServlet</servlet-name>
+        <servlet-class>AddServicingCardServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -135,6 +139,10 @@
     <servlet-mapping>
         <servlet-name>AddSpareServlet</servlet-name>
         <url-pattern>/addSpare</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddServicingCardServlet</servlet-name>
+        <url-pattern>/addServicingCard</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
