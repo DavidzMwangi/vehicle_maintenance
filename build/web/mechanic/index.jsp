@@ -1,7 +1,7 @@
 <%@ include file="/mechanic/layouts/header.html" %>
 
-            <!-- End Navbar -->
-            <div class="content">
+
+<div class="content">
                 <div class="container-fluid">
                     <div class="row">
 

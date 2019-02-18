@@ -13,7 +13,7 @@
                             <div class="card ">
                                 <div class="card-header ">
                                     <h4 class="card-title"> WorkOrders</h4>
-                                    <p class="card-category"> WorkOrders <%=request.getAttribute("number")%> </p>
+                                    <p class="card-category"> WorkOrders  </p>
                                 </div>
                                 <div class="card-body ">
                                    
@@ -29,9 +29,11 @@
                                         <th>Date</th>
                                           <th>Work Instructions</th> 
                                           <th>More Details</th> 
-                                             <th>Spares</th> 
-                                             <th>Approve Extra Defects</th> 
-                                             <th>Actions</th> 
+                                             <th> Checklist</th> 
+                                             <th>Extra Defects</th> 
+                                             <th>Spare Parts</th> 
+                                             <th> Servicing Card</th> 
+                                             
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -43,10 +45,12 @@
                                                 <td>${workorder.getCreatedAt()}</td>
                                                 <td>${workorder.getWorkInstructions()}</td>
                                                 <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
-                                                <td><a href="/GroupProject/view_spares?work_order_id=${workorder.getId()}" class="btn btn-primary">View Spares</a></td>
+                                                <td><a href="/GroupProject/addChecklist?work_order_id=${workorder.getId()}" class="btn btn-primary">Checklist</a></td>
                                                 <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
-                                                
-                                                <td>Actions </td>
+                                                <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>
+
+                                               <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Servicing Card</a></td>
+
                                             </tr>  
                                                 
                                             </c:forEach>
