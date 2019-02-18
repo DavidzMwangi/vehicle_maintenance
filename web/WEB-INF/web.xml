@@ -72,6 +72,10 @@
         <servlet-name>AddServicingCardServlet</servlet-name>
         <servlet-class>AddServicingCardServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -143,6 +147,10 @@
     <servlet-mapping>
         <servlet-name>AddServicingCardServlet</servlet-name>
         <url-pattern>/addServicingCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

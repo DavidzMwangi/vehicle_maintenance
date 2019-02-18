@@ -38,7 +38,7 @@ public class WorkOrderDao {
     
      public static List<WorkOrder> fetchWorkOrder(Connection connection){
 //        String sql="SELECT * FROM work_order";
-        String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,vehicles.reg_no FROM work_order LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id";
+        String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,work_order.servicing,vehicles.reg_no FROM work_order LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id";
 //        
         /*
         SELECT A.`first_name` , A.`last_name` , B.`title`
@@ -67,6 +67,7 @@ ON B.`id` = A.`movie_id`
        workorder.setId(resultSet.getInt("id"));
        workorder.setCreatedAt(resultSet.getString("created_at"));
        workorder.setRegNo(resultSet.getString("reg_no"));
+      workorder.setServicing(resultSet.getBoolean("servicing"));
        workorder.setWorkInstructions(resultSet.getString("work_instructions"));
 
             workorders.add(workorder);
@@ -77,7 +78,7 @@ ON B.`id` = A.`movie_id`
      public static List<WorkOrder> mechanicWorkOrders(Connection connection,int mechanic_id){
          
 //         String sql="SELECT * FROM work_order WHERE mechanic_id =?";
-                 String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,vehicles.reg_no FROM work_order  LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id WHERE work_order.mechanic_id =?";
+                 String sql="SELECT work_order.id,work_order.created_at,work_order.work_instructions,work_order.servicing,vehicles.reg_no FROM work_order  LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id WHERE work_order.mechanic_id =?";
 
          List<WorkOrder> workOrders=null;
          try (PreparedStatement statement = connection.prepareStatement(sql)){

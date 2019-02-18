@@ -93,7 +93,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\n");
       out.write("                            <p> Not yet registered please Sign Up</p>\n");
       out.write("                            <button type=\"submit\" class=\"btn btn-primary\">Log In</button>\n");
-      out.write("                            <a href=\"signup.jsp\">sign up</a>\n");
+      out.write("                            <a href=\"/GroupProject/foreman/signup.jsp\">sign up</a>\n");
       out.write("                        </form>\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");

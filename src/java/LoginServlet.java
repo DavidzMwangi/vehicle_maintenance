@@ -19,7 +19,9 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import dao.UsersDao;
 import db.DBConnection;
+import javax.servlet.http.Cookie;
 import model.User;
+import utlls.SessionUtil;
 /**
  *
  * @author David
@@ -53,6 +55,15 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
       if(foundUser!=null){
           //we have the  user
           
+          //set session here
+          SessionUtil.setUserSession(request, foundUser);
+          
+          //set cookie
+            Cookie userCookie = new Cookie("userCookie", user.getName());
+                userCookie.setMaxAge(24 * 60 * 60 * 30); //2 days
+                userCookie.setPath("/");
+              response.addCookie(userCookie);
+
           if(foundUser.getUser_type()==1){
               redirectUrl="/foreman/index.jsp";
           }else{

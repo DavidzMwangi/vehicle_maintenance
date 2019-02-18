@@ -49,7 +49,16 @@
                                                 <td><a href="/GroupProject/addAdditionalDefect?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
                                                 <td><a href="/GroupProject/addSpare?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>
 
-                                               <td><a href="/GroupProject/addServicingCard?work_order_id=${workorder.getId()}" class="btn btn-primary">Servicing Card</a></td>
+                                                
+                                               <td>
+
+                                                   <c:if test="${workorder.isServicing()==true}">
+                                                <a href="/GroupProject/addServicingCard?work_order_id=${workorder.getId()}" class="btn btn-primary">Servicing Card</a>
+
+                                                    </c:if>
+                                                                                
+                                               
+                                               </td>
 
                                             </tr>  
                                                 
