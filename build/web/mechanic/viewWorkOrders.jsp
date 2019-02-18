@@ -46,8 +46,8 @@
                                                 <td>${workorder.getWorkInstructions()}</td>
                                                 <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
                                                 <td><a href="/GroupProject/addChecklist?work_order_id=${workorder.getId()}" class="btn btn-primary">Checklist</a></td>
-                                                <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
-                                                <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>
+                                                <td><a href="/GroupProject/addAdditionalDefect?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
+                                                <td><a href="/GroupProject/nye?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>
 
                                                <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Servicing Card</a></td>
 

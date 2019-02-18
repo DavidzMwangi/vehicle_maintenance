@@ -62,4 +62,19 @@ public class AdditionalDefectDao {
         }
             
     }
+    
+    public static void insertDefect(Connection connection,AdditionalDefect additionalDefect){
+        
+        
+         String sql = "INSERT INTO additional_defects(name,work_order_id) VALUES (?,?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+          statement.setString(1, additionalDefect.getName());
+           statement.setInt(2, additionalDefect.getWorkOrderId());
+            
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
