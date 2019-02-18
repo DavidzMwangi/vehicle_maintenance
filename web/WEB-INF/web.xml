@@ -64,6 +64,10 @@
         <servlet-name>AddAdditionalDefectsServlet</servlet-name>
         <servlet-class>AddAdditionalDefectsServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddSpareServlet</servlet-name>
+        <servlet-class>AddSpareServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -127,6 +131,10 @@
     <servlet-mapping>
         <servlet-name>AddAdditionalDefectsServlet</servlet-name>
         <url-pattern>/addAdditionalDefect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSpareServlet</servlet-name>
+        <url-pattern>/addSpare</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

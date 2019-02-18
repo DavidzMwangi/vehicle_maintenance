@@ -60,4 +60,19 @@ public class SpareDao {
         }
             
     }
+    
+       public static void insertSpare(Connection connection,Spare spare){
+        
+        
+         String sql = "INSERT INTO spares(name,work_order_id) VALUES (?,?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+          statement.setString(1, spare.getName());
+           statement.setInt(2, spare.getWorkOrderId());
+            
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
