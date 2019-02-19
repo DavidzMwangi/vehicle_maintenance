@@ -15,7 +15,7 @@ public class ServicingCard implements Serializable{
     boolean engineOilChange;
     boolean gearboxOilLevel;
     boolean diffOilLevel;
-    boolean radioatorWaterLevel;
+    boolean radiatorWaterLevel;
     boolean powerSteering;
     boolean brakeFluid;
     boolean clutchFluid;
@@ -24,7 +24,24 @@ public class ServicingCard implements Serializable{
     boolean allLightsChecked;
     boolean batteryTerminalTightGrease;
     boolean windscreenWiperWater;
+    int workOrderId;
+    boolean engineOilLevel;
 
+    public boolean isEngineOilLevel() {
+        return engineOilLevel;
+    }
+
+    public void setEngineOilLevel(boolean engineOilLevel) {
+        this.engineOilLevel = engineOilLevel;
+    }
+
+    public int getWorkOrderId() {
+        return workOrderId;
+    }
+
+    public void setWorkOrderId(int workOrderId) {
+        this.workOrderId = workOrderId;
+    }
     
     public ServicingCard(){
         
@@ -55,12 +72,12 @@ public class ServicingCard implements Serializable{
         this.diffOilLevel = diffOilLevel;
     }
 
-    public boolean isRadioatorWaterLevel() {
-        return radioatorWaterLevel;
+    public boolean isRadiatorWaterLevel() {
+        return radiatorWaterLevel;
     }
 
-    public void setRadioatorWaterLevel(boolean radioatorWaterLevel) {
-        this.radioatorWaterLevel = radioatorWaterLevel;
+    public void setRadiatorWaterLevel(boolean radiatorWaterLevel) {
+        this.radiatorWaterLevel = radiatorWaterLevel;
     }
 
     public boolean isPowerSteering() {
