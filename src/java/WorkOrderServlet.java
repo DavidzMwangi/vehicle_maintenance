@@ -63,7 +63,8 @@ public class WorkOrderServlet extends HttpServlet {
         WorkOrder workOrder = new WorkOrder(vehicleId, mechanicId, instruction, isServicing, c.getTime());
         WorkOrderDao.insertVehicle(connection, workOrder);
 
-        response.sendRedirect("/GroupProject/foreman/index.jsp?status=success");
+//        response.sendRedirect("/GroupProject/foreman/index.jsp?status=success");
+            response.sendRedirect("/GroupProject/ShowWorkOrders");
 
     }
 
