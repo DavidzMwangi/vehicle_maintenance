@@ -76,6 +76,14 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MarkCompleteServlet</servlet-name>
+        <servlet-class>MarkCompleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>moreWorkOrderServlet</servlet-name>
+        <servlet-class>moreWorkOrderServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/addVehicle</url-pattern>
@@ -151,6 +159,14 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MarkCompleteServlet</servlet-name>
+        <url-pattern>/mark_complete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>moreWorkOrderServlet</servlet-name>
+        <url-pattern>/moreWorkOrderServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
