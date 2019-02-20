@@ -43,7 +43,7 @@
                                               <tr>
                                                 <td>${workorder.getRegNo()}</td>
                                                 <td>${workorder.getCreatedAt()}</td>
-                                                <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
+                                                <td><a href="/GroupProject/mechanicMoreWorkOrder?work_order_id=${workorder.getId()}" class="btn btn-primary">View More</a></td>
                                                 <td><a href="/GroupProject/addChecklist?work_order_id=${workorder.getId()}" class="btn btn-primary">Checklist</a></td>
                                                 <td><a href="/GroupProject/addAdditionalDefect?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
                                                 <td><a href="/GroupProject/addSpare?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>

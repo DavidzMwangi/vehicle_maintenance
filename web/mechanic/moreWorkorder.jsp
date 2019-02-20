@@ -3,7 +3,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 
-<%@ include file="../foreman/layouts/header.html" %>
+<%@ include file="../mechanic/layouts/header.html" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
@@ -125,5 +125,5 @@
                 
                 </div>
             </div>
-                      <%@ include file="../foreman/layouts/footer.html" %>
+                      <%@ include file="../mechanic/layouts/footer.html" %>
  

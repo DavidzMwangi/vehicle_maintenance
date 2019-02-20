@@ -70,17 +70,24 @@
                                             
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <label>Type of work</label>
                                             <c:if test=" ${requestScope.workOrder.isServicing()==true}">
-                                                    <h3>servicing</h3>
+                                                 <label>Type of work</label>
+    
+                                                <h3>servicing</h3>
                                                     
                                                     
                                                     
                                                     
                                             </c:if>
+                                                    
+                                                    
                                                 <c:if test="${requestScope.workOrder.isServicing()==false}">
+                                                   <label>Type of work</label>
+
                                                     <h3>Defect</h3>
-                                                </c:if>    
+                                                </c:if>   
+                                                    
+                                                    
                                                   
                                                   
                                                   

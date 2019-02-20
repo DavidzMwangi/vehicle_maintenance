@@ -102,4 +102,40 @@ public class WorkOrderDao {
          }
          
     }
+     
+     
+    public static WorkOrder dataGetting(Connection  connection, int id){
+//                String sql="SELECT *  FROM work_order WHERE id=? LIMIT 1 ";
+                String sql = "SELECT work_order.id,work_order.work_instructions,work_order.servicing,work_order.confirmed,work_order.completed,work_order.date, vehicles.reg_no,vehicles.chasis_no,vehicles.model_no,vehicles.engine_no,vehicles.department,vehicles.odometer_reading,vehicles.fuel,users.name FROM work_order LEFT JOIN vehicles  ON work_order.vehicle_id=vehicles.id INNER JOIN users ON work_order.mechanic_id=users.id WHERE work_order.id=? LIMIT 1";
+      
+                WorkOrder order=new WorkOrder();
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+        statement.setInt(1, id);
+            
+            ResultSet set=statement.executeQuery();
+             while(set.next()){
+                 
+                 order.setId(set.getInt("id"));
+            order.setRegNo(set.getString("reg_no"));
+            order.setServicing(set.getBoolean("servicing"));
+            order.setCompleted(set.getBoolean("completed"));
+            order.setPromisedDate(set.getDate("date"));
+            order.setMechanicName(set.getString("name"));
+            order.setEngineNumber(set.getInt("engine_no"));
+            order.setChasisNumber(set.getString("chasis_no"));
+            order.setModelNumber(set.getString("model_no"));
+            order.setDepartment(set.getString("department"));
+            order.setFuel(set.getDouble("fuel"));
+            order.setOdometerReading(set.getInt("odometer_reading"));
+            order.setWorkInstructions(set.getString("work_instructions"));
+             }
+            
+        }catch(Exception e){
+                        e.printStackTrace();
+
+
+        }
+        return order;
+        
+    }
 }
