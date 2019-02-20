@@ -27,13 +27,13 @@
                                                
                                                 <th>Vehicle Name</th>
                                         <th>Date</th>
-                                          <th>Work Instructions</th> 
                                           <th>More Details</th> 
                                              <th> Checklist</th> 
                                              <th>Extra Defects</th> 
                                              <th>Spare Parts</th> 
                                              <th> Servicing Card</th> 
-                                             
+                                             <th>Mark Complete</th> 
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -43,8 +43,7 @@
                                               <tr>
                                                 <td>${workorder.getRegNo()}</td>
                                                 <td>${workorder.getCreatedAt()}</td>
-                                                <td>${workorder.getWorkInstructions()}</td>
-                                                <td><a href="/GroupProject/moreWorkOrder/${workorder.getId()}" class="btn btn-primary">View More</a></td>
+                                                <td><a href="/GroupProject/mechanicMoreWorkOrder?work_order_id=${workorder.getId()}" class="btn btn-primary">View More</a></td>
                                                 <td><a href="/GroupProject/addChecklist?work_order_id=${workorder.getId()}" class="btn btn-primary">Checklist</a></td>
                                                 <td><a href="/GroupProject/addAdditionalDefect?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
                                                 <td><a href="/GroupProject/addSpare?work_order_id=${workorder.getId()}" class="btn btn-primary">Spare Parts</a></td>
@@ -60,6 +59,15 @@
                                                
                                                </td>
 
+                                               <td>
+                                                   <c:if test="${workorder.isCompleted()==false}">
+                                                    <a href="/GroupProject/mark_complete?work_order_id=${workorder.getId()}">Mark as Complete</a>
+
+                                                   </c:if>
+                                                   <c:if test="${workorder.isCompleted()==true}">
+                                                       <span class="badge badge-success">Completed</span>
+                                                   </c:if>
+                                               </td>
                                             </tr>  
                                                 
                                             </c:forEach>

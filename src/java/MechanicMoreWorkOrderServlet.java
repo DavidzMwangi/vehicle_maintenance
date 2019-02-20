@@ -8,7 +8,6 @@ import dao.WorkOrderDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,31 +19,37 @@ import model.WorkOrder;
  *
  * @author David
  */
-public class ShowWorkOrdersServlet extends HttpServlet {
+public class MechanicMoreWorkOrderServlet extends HttpServlet {
 
- @Override
+    
+
+    
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        doPost(request,response);
+
         
+
+    int workorder =Integer.parseInt (request.getParameter("work_order_id"));
+                       String url = "/mechanic/moreWorkorder.jsp";
+
+      
+     Connection connection = db.DBConnection.getConnection();
+     
+    WorkOrder workorderModel=   WorkOrderDao.dataGetting(connection, workorder);
+    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+   
+    request.setAttribute("workOrder", workorderModel);
+
+    dispatcher.forward(request,response);
     }
-    
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-           String url = "/foreman/showWorkOrder.jsp";
 
-        Connection connection = db.DBConnection.getConnection();
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        List<WorkOrder> workorder = WorkOrderDao.fetchWorkOrder(connection);
-
-        request.setAttribute("workorders", workorder);
-
-        dispatcher.forward(request, response);
-        
-        
     }
+
+  
 }

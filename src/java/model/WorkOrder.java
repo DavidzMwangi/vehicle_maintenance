@@ -24,6 +24,77 @@ public class WorkOrder implements Serializable {
     private String createdAt;
     private String regNo;
 
+    
+    private Date promisedDate;
+    private String mechanicName;
+    private int engineNumber;
+    private String chasisNumber;
+    private String modelNumber;
+    private String department;
+    private double fuel;
+    private int odometerReading;
+    
+    
+    public String getMechanicName() {
+        return mechanicName;
+    }
+
+    public void setMechanicName(String mechanicName) {
+        this.mechanicName = mechanicName;
+    }
+
+    public int getEngineNumber() {
+        return engineNumber;
+    }
+
+    public void setEngineNumber(int engineNumber) {
+        this.engineNumber = engineNumber;
+    }
+
+    public String getChasisNumber() {
+        return chasisNumber;
+    }
+
+    public void setChasisNumber(String chasisNumber) {
+        this.chasisNumber = chasisNumber;
+    }
+
+    public String getModelNumber() {
+        return modelNumber;
+    }
+
+    public void setModelNumber(String modelNumber) {
+        this.modelNumber = modelNumber;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public double getFuel() {
+        return fuel;
+    }
+
+    public void setFuel(double fuel) {
+        this.fuel = fuel;
+    }
+
+    public int getOdometerReading() {
+        return odometerReading;
+    }
+
+    public void setOdometerReading(int odometerReading) {
+        this.odometerReading = odometerReading;
+    }
+
+   
+    
+
+    
     public String getRegNo() {
         return regNo;
     }
@@ -33,7 +104,6 @@ public class WorkOrder implements Serializable {
     }
 
     
-    private Date promisedDate;
 
     public WorkOrder() {
     }
