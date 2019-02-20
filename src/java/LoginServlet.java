@@ -81,6 +81,8 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
           
         errorMessage = "The user does not exist in the system. Please signup";
             redirectUrl = "/foreman/signup.jsp";
+//                        redirectUrl = "/GroupProject/foreman/signup.jsp";
+
             request.setAttribute("error", errorMessage);
 
       }

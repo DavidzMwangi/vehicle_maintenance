@@ -154,7 +154,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                          \n");
       out.write("                        \n");
       out.write("                            <li class=\"nav-item\">\n");
-      out.write("                                <a class=\"nav-link\" href=\"#\">\n");
+      out.write("                               <a class=\"nav-link\" href=\"/GroupProject/logout\">\n");
       out.write("                                    <span class=\"no-icon\">Log out</span>\n");
       out.write("                                </a>\n");
       out.write("                            </li>\n");
@@ -172,7 +172,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <div class=\"row\">\n");
       out.write("\n");
       out.write("\n");
-      out.write("<h1>Dashboard</h1>\n");
       out.write("                    </div>\n");
       out.write("              \n");
       out.write("                </div>\n");

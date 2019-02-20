@@ -9,7 +9,9 @@
 
 <%@ include file="../foreman/layouts/header.html" %>
 
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>-->
             <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
@@ -25,7 +27,7 @@
                                    
                                     
                                     
-                                    <table class="table table-responsive ">
+                                    <table  class="table table-responsive ">
                                         
                                         <thead>
                                             <tr>
@@ -37,7 +39,7 @@
                                           <th>More Details</th> 
                                              <th>Spares</th> 
                                              <th>Approve Extra Defects</th> 
-                                             <th>Actions</th> 
+                                             <th>Status</th> 
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -52,7 +54,18 @@
                                                 <td><a href="/GroupProject/view_spares?work_order_id=${workorder.getId()}" class="btn btn-primary">View Spares</a></td>
                                                 <td><a href="/GroupProject/additionalDefects?work_order_id=${workorder.getId()}" class="btn btn-primary">Extra Defects</a></td>
                                                 
-                                                <td>Actions </td>
+                                                <td>
+                                                
+                                                 <c:if test="${workorder.isCompleted()==false}">
+                                                     <span class="badge badge-danger">Incomplete</span>
+
+                                                 </c:if>
+                                                     
+                                                     <c:if test="${workorder.isCompleted()==true}">
+                                                         <span class="badge badge-success">Complete</span>
+
+                                                     </c:if>
+                                                </td>
                                             </tr>  
                                                 
                                             </c:forEach>
@@ -68,5 +81,11 @@
                 
                 </div>
             </div>
+            
+<!--            <script>
+                $(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+                </script>-->
                       <%@ include file="../foreman/layouts/footer.html" %>
  
